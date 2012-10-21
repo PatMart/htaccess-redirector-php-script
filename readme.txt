@@ -1,4 +1,16 @@
-only meant to be used as a very quick tool.
+.htaccess Redirector PHP Script.
+
+Need to redirect a bunch of URLs? Got those urls and the new locations in CSV format? This is for you. Only run this script in a development area, never for a live site.
+
+I recommend using a site spider service such as sitemapdoc.com to get a list of all current urls (This is assuming your site is smallish, static urls).
+
+Then append to each line ",http://newurl.com/"
+
+The example in the source code should make sense.
+
+
+
+Only meant to be used as a very quick tool.
 
 ############
 ############
@@ -8,7 +20,7 @@ Handy when you have a list of old URLs and are moving them to new urls.
 ############
 ###########
 
-dont use on production sites. full of potential bugs.
+Don't use on production sites. full of potential bugs.
 
 
-use something like http://www.sitemapdoc.com/Default.aspx#errors to generate a textlist of old urls, then add ',http://newsite/newpage' to each line.
+Use something like http://www.sitemapdoc.com/Default.aspx to generate a textlist of old urls, then add ',http://newsite/newpage' to each line.
